@@ -1,0 +1,124 @@
+.LogoSlider {
+  text-align: center;
+}
+
+.LogoSlider-logo {
+  height: 4vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .LogoSlider-logo {
+    animation: LogoSlider-logo-spin infinite 20s linear;
+  }
+}
+
+.LogoSlider-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.LogoSlider-link {
+  color: #61dafb;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+
+.mainlogoslider-Container {
+  margin: 10px;
+}
+
+.mainlogoslider-Container .logoslider-container {
+  padding: 50px 0;
+}
+
+.mainlogoslider-Container .logoslider-container img {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .mainlogoslider-Container .logoslider-container img {
+    height: 80px;
+  }
+}
+
+@media (max-width: 992px) {
+  .LogoSlider-header {
+    font-size: calc(8px + 2vmin);
+  }
+
+  .mainlogoslider-Container .logoslider-container img {
+    height: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .LogoSlider-header {
+    font-size: calc(6px + 2vmin);
+    min-height: 80vh;
+  }
+
+  .mainlogoslider-Container .logoslider-container img {
+    height: 60px;
+  }
+
+  .mainlogoslider-Container {
+    margin: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .LogoSlider-header {
+    font-size: calc(4px + 2vmin);
+    min-height: 60vh;
+  }
+
+  .mainlogoslider-Container .logoslider-container img {
+    height: 30px;
+  }
+
+  .mainlogoslider-Container {
+    margin: 0;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .LogoSlider-header {
+    font-size: calc(4px + 2vmin);
+    min-height: 40vh;
+  }
+
+  .mainlogoslider-Container .logoslider-container img {
+    height: 20px;
+  }
+
+  .mainlogoslider-Container {
+    margin: 0;
+    padding: 5px;
+  }
+}
+
+@keyframes LogoSlider-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
